@@ -2,12 +2,9 @@ import streamlit as st
 import pandas as pd
 import os
 
-# 📌 Ruta en OneDrive
-EXCEL_DIR = r"C:\Users\anavarro\OneDrive - INDEPORTES ANTIOQUIA\AI\2025\METODOLOGO\Encuesta_entrenadores\Encuesta_2"
-EXCEL_FILE = os.path.join(EXCEL_DIR, "resultados_entrenadores.xlsx")
+# 📌 Nueva ruta dentro del contenedor en Render
+EXCEL_FILE = "resultados_entrenadores.xlsx"
 
-# 📌 Asegurar que la carpeta en OneDrive existe antes de guardar el archivo
-os.makedirs(EXCEL_DIR, exist_ok=True)
 
 # 📌 Función para cargar datos desde el Excel en OneDrive
 def cargar_datos():

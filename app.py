@@ -87,7 +87,7 @@ with st.expander("📌 **Bloque 2: Eventos Nacionales**"):
             "Plata": plata_nac,
             "Bronce": bronce_nac,
             "Posición 4-8": posicion_nac,
-            "Nombre Deportistas": atletas_nac
+            "Nombre Atletas": atletas_nac
         })
         st.success("✅ Registro guardado correctamente")
 
@@ -182,11 +182,11 @@ with st.expander("📌 **Bloque 4: Eventos Internacionales - Campeonatos**"):
         st.success("✅ Registro guardado correctamente")
 
 # 📌 Mostrar Registros Guardados
-st.subheader("📋 Registros Guardados")
+st.subheader("📋 Registro parcial")
 df = cargar_datos()
 st.dataframe(df)
 
 # 📌 Botón para actualizar datos sin errores
-if st.button("🔄 Actualizar Datos"):
+if st.button("🔄 Reporte final"):
     st.rerun()
 
